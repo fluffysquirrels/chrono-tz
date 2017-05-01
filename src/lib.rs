@@ -141,6 +141,12 @@
 
 extern crate chrono;
 
+#[cfg(feature = "use_serde")]
+extern crate serde;
+#[cfg(feature = "use_serde")]
+#[macro_use]
+extern crate serde_derive;
+
 mod timezone_impl;
 mod binary_search;
 mod timezones;
